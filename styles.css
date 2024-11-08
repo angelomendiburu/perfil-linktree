@@ -1,0 +1,179 @@
+body {
+    background-image: url('./imagenes/microfono325x608.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.perfil-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.perfil-contenedor h1 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.perfil-contenedor p {
+    margin-top: 0;
+    color: white;
+}
+
+#perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 300px;
+    padding: 21px;
+    background-color: #b2b1ac;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, border 0.2s ease;
+}
+
+.custom-button::after {
+    content: '⋮';
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.custom-button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transform: scale(1.03);
+}
+
+.custom-button:hover::after {
+    color: #ffffff;
+}
+
+.custom-button:active {
+    transform: scale(0.98);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    margin: 15% auto;
+    padding: 25px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.close-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #b2b1ac;
+}
+
+.tour-date {
+    padding: 15px;
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.tour-date:last-child {
+    border-bottom: none;
+}
+
+.tour-date:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.tour-date h3 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.tour-date p {
+    margin: 5px 0;
+    color: #b2b1ac;
+}
+
+@media (max-width: 480px) {
+    .custom-button {
+        width: 90%;
+        padding: 18px;
+    }
+    
+    .perfil-contenedor {
+        padding: 15px;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .tour-date {
+        padding: 12px;
+    }
+}

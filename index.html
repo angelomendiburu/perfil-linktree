@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marjan van Aubel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="perfil-contenedor">
+        <img src="imagenes/fotodeperfildelartista.jpg" alt="Foto de Perfil" id="perfil">
+        <div class="h1">
+            <h1>Marjan van Aubel</h1>
+            <p>Récord de éxito</p>
+        </div>
+        <div class="button-container">
+            <a href="https://ejemplo.com/podcast" class="custom-button">Subscribe to our podcast</a>
+            <a href="https://ejemplo.com/ultimo-episodio" class="custom-button">Latest episode</a>
+            <a href="#" class="custom-button" id="tourDatesBtn">Tour dates</a>
+            <a href="https://ejemplo.com" class="custom-button">Our website</a>
+        </div>
+    </div>
+
+    <div id="tourModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h2>Fechas de Gira 2024</h2>
+            <div id="tourDates">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
